@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0A0B0D;
+    color: #ECEDEE;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  /* Custom dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0B0D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #22252B;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2D313A;
+  }
+}
+
+/* Glassmorphism surfaces */
+.glass-panel {
+  background: rgba(19, 21, 25, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 37, 43, 0.6);
+}
+
+.glass-panel-elevated {
+  background: rgba(26, 29, 36, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 178, 61, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Glow effects */
+.glow-gold {
+  box-shadow: 0 0 15px rgba(232, 178, 61, 0.15);
+}
+.glow-rumor {
+  box-shadow: 0 0 15px rgba(229, 72, 77, 0.15);
+}
+.glow-non-rumor {
+  box-shadow: 0 0 15px rgba(61, 214, 140, 0.15);
+}
+
+/* Custom D3 Graph styling */
+.propagation-graph-container svg {
+  user-select: none;
+  cursor: grab;
+}
+.propagation-graph-container svg:active {
+  cursor: grabbing;
+}
+
+.node-hover-card {
+  pointer-events: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+/* Glow animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+.pulse-glow-gold {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
+
+/* Chart customizations */
+.recharts-default-tooltip {
+  background-color: #131519 !important;
+  border: 1px solid #22252B !important;
+  border-radius: 6px !important;
+}
+
+.recharts-tooltip-label {
+  color: #ECEDEE !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 500 !important;
+}
