@@ -235,7 +235,7 @@ See [`LITERATURE_SURVEY.md`](LITERATURE_SURVEY.md) for a full 15-paper annotated
 
 ## 👤 Author
 
-**Chris Jason** — B.E. CSE (AI & ML), Sri Krishna College of Technology, Coimbatore
+**Jason Paul B** — B.E. CSE (AI & ML), Sri Krishna College of Technology, Coimbatore
 GitHub: [@realvchris1x](https://github.com/realvchris1x)
 
 ---
