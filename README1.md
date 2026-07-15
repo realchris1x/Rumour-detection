@@ -240,6 +240,4 @@ GitHub: [@realvchris1x](https://github.com/realvchris1x)
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
